@@ -1,0 +1,28 @@
+body{
+    display:flex;
+    padding:0; 
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.board{
+    flex: 0 0 auto;
+    width: 400px;
+    height: 400px;
+    margin:auto;
+    display: flex;
+    background:white;
+    padding:10px;
+    border-radius: 30px;
+    flex-direction: column;
+}
+.row{
+    flex:1;
+    display:flex;
+}
+.cell{
+    border: 2px black solid;
+    background-color: white;
+    flex:1;
+}
