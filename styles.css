@@ -5,6 +5,8 @@ body{
     align-items: center;
     justify-content: center;
     background-color: black;
+    flex-direction: column;
+    gap:50px;
 }
 .board{
     flex: 0 0 auto;
@@ -22,10 +24,16 @@ body{
     display:flex;
 }
 .cell{
-    border: 2px black solid;
+    border: 0.5px black solid;
     background-color: white;
     flex:1;
 }
 .hovered{
     background-color: grey;
+}
+.reset{
+    padding: 20px 100px;
+    background-color: white;
+    border: 3px solid gray;
+    border-radius: 5px;
 }
