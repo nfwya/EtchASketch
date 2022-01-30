@@ -22,6 +22,12 @@ const drawRow = function(gridNum){
     }
     return newRow;
 }
-drawBoard(4);
+drawBoard(5);
 
 /* Event Listener */
+const cells = document.querySelectorAll(".cell")
+const etch = function(e){
+    this.classList.add("hovered");
+    //setTimeout(function(){this.classList.remove('hovered')},500);
+}
+cells.forEach( cell => cell.addEventListener('mouseover', etch ) );
